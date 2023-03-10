@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigate_main"
+    app:startDestination="@id/mainAnimationFragment">
+
+    <fragment
+        android:id="@+id/bubbleAnimationFragment"
+        android:name="com.app.func.view.animations_custom.BubbleAnimationFragment"
+        android:label="BubbleAnimationFragment"
+        tools:layout="@layout/bubble_animation_fragment" />
+
+    <fragment
+        android:id="@+id/mainAnimationFragment"
+        android:name="com.app.func.features.animations_fragment.MainAnimationFragment"
+        android:label="main_animation_fragment"
+        tools:layout="@layout/main_animation_fragment">
+        <action
+            android:id="@+id/action_mainAnimationFragment_to_bubbleAnimationFragment"
+            app:destination="@id/bubbleAnimationFragment" />
+        <action
+            android:id="@+id/action_mainAnimationFragment_to_bubbleEmitterFragment"
+            app:destination="@id/bubbleEmitterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bubbleEmitterFragment"
+        android:name="com.app.func.view.animations_custom.BubbleEmitterFragment"
+        android:label="BubbleEmitterFragment"
+        tools:layout="@layout/bubble_emitter_fragment" />
+
+</navigation>

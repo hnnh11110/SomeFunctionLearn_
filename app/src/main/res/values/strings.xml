@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">SomeFunc_App</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">Logout</string>
+    <string name="username">User Name</string>
+    <string name="password">PassWord</string>
+    <string name="don_t_have_account">You do not have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create account</string>
+    <string name="go">Go</string>
+    <string name="recyclerView" translatable="false">RecyclerView</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="kotlin_title">Kotlin</string>
+    <string name="kotlin_url">https://koenig-media.raywenderlich.com/uploads/2019/01/Kotlin.png</string>
+    <string name="kotlin_desc">We all know Kotlin is just the best. Kotlin has both object-oriented and functional
+        constructs. It can be used for both client side applications and server side applications. Our site is rich of
+        Kotlin tutorials.
+        Do read them if you want to learn Kotlin :]
+    </string>
+    <string name="android_name">Android</string>
+    <string name="android_url">https://koenig-media.raywenderlich.com/uploads/2019/01/android_rw_flag_2.png</string>
+    <string name="android_desc">Android is a mobile operating system by Google. Development for android platform is even
+        more fun with Kotlin. We have an awesome lineup of Android Tutorials that too based on Kotlin. Enjoy.. :]
+    </string>
+    <string name="rxkotlin_name">RxKotlin</string>
+    <string name="rxkotlin_url">https://koenig-media.raywenderlich.com/uploads/2019/01/RxSwift.png</string>
+    <string name="rxkotlin_desc">The RxKotlin is an implementation of a Reactive Stream specification. Kotlin adds more
+        fun to reactive programming as it adds convenient extension functions to RxJava. Go ahead and have a look to our
+        Rx tutorial. :]
+    </string>
+    <string name="kitura_name">Kitura</string>
+    <string name="kitura_url">https://koenig-media.raywenderlich.com/uploads/2019/01/kitura.png</string>
+    <string name="kitura_desc">Kitura is a server-side Swift framework for building iOS backends and web applications.
+        This framework creates REST APIs that can be invoked from the iOS applications. We have Kitura tutorial too :]
+    </string>
+    <string name="error_message">Error while loading image.</string>
+    <string name="home">Home</string>
+    <string name="image_failed_loading">Image failed loading</string>
+    <string name="demo_string_pinch_zoom">This is my sample text for pinch zoom demo, you can zoom in and out using pinch zoom, thanks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="simple">Simple</string>
+    <string name="map">Map</string>
+    <string name="zip">Zip</string>
+    <string name="timer">Time</string>
+    <string name="filter">Filter</string>
+    <string name="concat">Concat</string>
+    <string name="merge">Merge</string>
+    <string name="delay">Delay</string>
+    <string name="doSomeWork">doSomeWork</string>
+    <string name="result">Result</string>
+    <string name="weather">Weather</string>
+    <string name="search">Search</string>
+    <string name="rx">Rx</string>
+    <string name="coroutines">Coroutines</string>
+
+    <string name="single_network_call">Single Network Call</string>
+    <string name="series_network_calls">Series Network Calls</string>
+    <string name="parallel_network_calls">Parallel Network Calls</string>
+    <string name="room_database">Room Database</string>
+    <string name="timeout">Timeout</string>
+    <string name="try_catch_error">Try-Catch Error</string>
+    <string name="exception_handler">ExceptionHandler</string>
+    <string name="ignore_error_and_continue">Ignore Error And Continue</string>
+    <string name="long_running_task">Long Running Task</string>
+    <string name="two_long_running_tasks">Two Long Running Tasks</string>
+
+
+    <string name="current_temperature">Nhiệt độ hiện tại</string>
+    <string name="temp_format">%s°C</string>
+
+
+    <string name="name_contain_special_character">"Chỉ hỗ trợ kí tự a-z, A-Z, 0-9, -, _ và dấu cách"</string>
+    <string name="name_is_blank_error">"Thông tin Họ và tên đang chỉ chứa kí tự trắng. Vui lòng nhập lại"</string>
+    <string name="input_phone_number">Số điện thoại có độ dài từ 9 đến 15 kí tự</string>
+    <string name="fill_number_phone_please">Vui lòng điền số điện thoại</string>
+    <string name="error_validation_room_name">Tên phòng có độ dài 30 ký tự</string>
+    <string name="error_validation_room_name_empty">Bạn không được để trống Tên phòng</string>
+    <string name="button_delete">Xóa</string>
+    <string name="non_data">--</string>
+    <string name="title_value">Index</string>
+    <string name="analog_clock_text">Analog clock view!</string>
+    <string name="delete">delete</string>
+    <string name="profile">Profile</string>
+    <string name="label_count">Count</string>
+    <string name="label_duration">Duration</string>
+    <string name="view_pager">ViewPager</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="priority">Priority</string>
+    <string name="room_rx_mvvm">RoomRxMVVM</string>
+    <string name="room_coroutines">Room Coroutines</string>
+    <string name="save">Save</string>
+    <string name="hint_word">Word</string>
+    <string name="ball_1">Bóng_1</string>
+    <string name="ball_2">Bóng_2</string>
+
+
+</resources>

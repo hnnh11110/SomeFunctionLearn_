@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".coroutine_demo.CoroutinesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_32dp"
+        android:layout_marginTop="@dimen/_32dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSingleCallNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/single_network_call"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnSeriesCallNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/series_network_calls"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnParallelCallNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/parallel_network_calls"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnRoomDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/room_database"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnTimeOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeout"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnTryCatchError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/try_catch_error"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnExceptionHandler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exception_handler"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnIgnoreAndContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ignore_error_and_continue"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnLongRunTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/long_running_task"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnTwoLongRunTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/two_long_running_tasks"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

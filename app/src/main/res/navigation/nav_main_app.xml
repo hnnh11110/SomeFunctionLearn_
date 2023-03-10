@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_app"
+    app:startDestination="@id/multiSynsFragment">
+
+    <fragment
+        android:id="@+id/multiSynsFragment"
+        android:name="com.app.func.common_fragment.MultiSynsFragment"
+        android:label="fragment_multi_syns"
+        tools:layout="@layout/fragment_multi_syns">
+        <action
+            android:id="@+id/action_multiSynsFragment_to_coroutinesFragment"
+            app:destination="@id/coroutinesFragment" />
+        <action
+            android:id="@+id/action_multiSynsFragment_to_rxFunctionFragment"
+            app:destination="@id/rxFunctionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/coroutinesFragment"
+        android:name="com.app.func.coroutine_demo.CoroutinesFragment"
+        tools:layout="@layout/fragment_coroutines">
+        <action
+            android:id="@+id/action_coroutinesFragment_to_singleCallNetworkFragment"
+            app:destination="@id/singleCallNetworkFragment" />
+        <action
+            android:id="@+id/action_coroutinesFragment_to_listMoviesFragment"
+            app:destination="@id/listMoviesFragment" />
+        <action
+            android:id="@+id/action_coroutinesFragment_to_seriesCallFragment"
+            app:destination="@id/seriesCallFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/rxFunctionFragment"
+        android:name="com.app.func.rx_function.RxFunctionFragment"
+        android:label="fragment_rx_function"
+        tools:layout="@layout/fragment_rx_function">
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_weatherDemoFragment"
+            app:destination="@id/weatherDemoFragment" />
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_simpleRXFragment"
+            app:destination="@id/simpleRXFragment" />
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_mapRXFragment"
+            app:destination="@id/mapRXFragment" />
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_zipRXFragment"
+            app:destination="@id/zipRXFragment" />
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_timerRXFragment"
+            app:destination="@id/timerRXFragment" />
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_searchByRXFragment"
+            app:destination="@id/searchByRXFragment" />
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_filterRXFragment"
+            app:destination="@id/filterRXFragment" />
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_delayRXFragment"
+            app:destination="@id/delayRXFragment" />
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_concatRXFragment"
+            app:destination="@id/concatRXFragment" />
+        <action
+            android:id="@+id/action_rxFunctionFragment_to_mergeRXFragment"
+            app:destination="@id/mergeRXFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherDemoFragment"
+        android:name="com.app.func.login_demo.WeatherDemoFragment"
+        android:label="WeatherDemoFragment"
+        tools:layout="@layout/fragment_weather_demo" />
+    <fragment
+        android:id="@+id/simpleRXFragment"
+        android:name="com.app.func.rx_function.SimpleRXFragment"
+        android:label="fragment_simple_rx"
+        tools:layout="@layout/fragment_simple_rx" />
+    <fragment
+        android:id="@+id/mapRXFragment"
+        android:name="com.app.func.rx_function.MapRXFragment"
+        android:label="MapRXFragment"
+        tools:layout="@layout/fragment_simple_rx" />
+    <fragment
+        android:id="@+id/zipRXFragment"
+        android:name="com.app.func.rx_function.ZipRXFragment"
+        android:label="ZipRXFragment"
+        tools:layout="@layout/fragment_simple_rx" />
+    <fragment
+        android:id="@+id/timerRXFragment"
+        android:name="com.app.func.rx_function.TimerRXFragment"
+        android:label="TimerRXFragment"
+        tools:layout="@layout/fragment_simple_rx" />
+    <fragment
+        android:id="@+id/filterRXFragment"
+        android:name="com.app.func.rx_function.FilterRXFragment"
+        android:label="FilterRXFragment"
+        tools:layout="@layout/fragment_simple_rx" />
+    <fragment
+        android:id="@+id/concatRXFragment"
+        android:name="com.app.func.rx_function.ConcatRXFragment"
+        android:label="ConcatRXFragment"
+        tools:layout="@layout/fragment_simple_rx" />
+    <fragment
+        android:id="@+id/mergeRXFragment"
+        android:name="com.app.func.rx_function.MergeRXFragment"
+        android:label="MergeRXFragment"
+        tools:layout="@layout/fragment_simple_rx" />
+    <fragment
+        android:id="@+id/delayRXFragment"
+        android:name="com.app.func.rx_function.DelayRXFragment"
+        android:label="DelayRXFragment"
+        tools:layout="@layout/fragment_simple_rx" />
+    <fragment
+        android:id="@+id/searchByRXFragment"
+        android:name="com.app.func.rx_function.SearchByRXFragment"
+        android:label="fragment_search_by_rx"
+        tools:layout="@layout/fragment_search_by_rx" />
+
+    <fragment
+        android:id="@+id/singleCallNetworkFragment"
+        android:name="com.app.func.coroutine_demo.retrofit.single.SingleCallNetworkFragment"
+        android:label="fragment_single_call_network"
+        tools:layout="@layout/fragment_single_call_network" />
+    <fragment
+        android:id="@+id/listMoviesFragment"
+        android:name="com.app.func.coroutine_demo.retrofit.aaa.ListMoviesFragment"
+        android:label="ListMoviesFragment"
+        tools:layout="@layout/fragment_single_call_network" />
+    <fragment
+        android:id="@+id/seriesCallFragment"
+        android:name="com.app.func.coroutine_demo.retrofit.series.SeriesCallFragment"
+        android:label="SeriesCallFragment" />
+
+</navigation>

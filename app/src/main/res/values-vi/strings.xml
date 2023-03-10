@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SomeFunc_App</string>
+    <string name="welcome">Chào bạn</string>
+    <string name="logout">Thoát</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="don_t_have_account">Chưa có tài khoản?</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="create_account">Tạo tài khoản</string>
+    <string name="go">Đi tới</string>
+</resources>

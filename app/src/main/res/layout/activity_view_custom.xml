@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:fillViewport="true"
+    android:paddingBottom="60dp"
+    tools:context=".ViewCustomActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5E5">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_40dp"
+            android:paddingBottom="@dimen/_16dp"
+            android:stateListAnimator="@null"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_8dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.app.func.view.seekbarcustom.CustomSeekBar
+                android:id="@+id/customSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_10dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consToolTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-8dp"
+            android:background="@android:color/transparent"
+            android:elevation="@dimen/_10dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.app.func.view.seekbarcustom.ToolTipSeekBar
+                android:id="@+id/toolTipSeekBar"
+                android:layout_width="@dimen/_34dp"
+                android:layout_height="@dimen/_34dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.app.func.view.chart.stock.TemperatureView
+            android:id="@+id/viewTempProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@id/cardView" />
+
+        <com.app.func.view.chart.stock.WaterTankTemperatureView
+            android:id="@+id/waterViewTempProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/viewTempProgress" />
+
+        <com.app.func.view.seekbarcustom.crollerTest.Croller
+            android:id="@+id/crollerSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_48dp"
+            android:layout_marginTop="@dimen/_32dp"
+            app:back_circle_color="#EDEDED"
+            app:indicator_color="#0B3C49"
+            app:indicator_width="5"
+            app:is_continuous="true"
+            app:label="aaaaa"
+            app:label_color="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/waterViewTempProgress"
+            app:main_circle_color="#FFFFFF"
+            app:max="1000"
+            app:progress_primary_color="#0B3C49"
+            app:progress_secondary_color="#EEEEEE"
+            app:start_offset="0" />
+
+        <com.app.func.view.seekbarcustom.CircularSeekBar
+            android:id="@+id/circularSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300dp"
+            android:layout_marginTop="@dimen/_32dp"
+            app:layout_constraintTop_toBottomOf="@id/crollerSeekbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

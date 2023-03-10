@@ -1,0 +1,120 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+//    id 'kotlin-android-extensions'
+    id 'kotlin-parcelize'
+//    id 'org.jetbrains.kotlin.plugin.parcelize'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.app.func"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    //ViewBinding
+    buildFeatures {
+        viewBinding true
+        compose true //Jetpack Compose
+    }
+
+    //Jetpack Compose
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.1.1'
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //FlexboxLayout
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.13.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.1'
+
+    //Jetpack Compose
+    //def composeVersion = '1.1.1'
+    implementation 'androidx.compose.ui:ui:1.1.1'
+    // Tooling support (Previews, etc.)
+    implementation 'androidx.compose.ui:ui-tooling:1.1.1'
+    // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
+    implementation 'androidx.compose.foundation:foundation:1.1.1'
+    // Material Design
+    implementation 'androidx.compose.material:material:1.1.1'
+    // Material design icons
+    implementation 'androidx.compose.material:material-icons-core:1.1.1'
+    implementation 'androidx.compose.material:material-icons-extended:1.1.1'
+    // Integration with observables
+    implementation 'androidx.compose.runtime:runtime-livedata:1.1.1'
+    implementation 'androidx.compose.runtime:runtime-rxjava2:1.1.1'
+
+    // UI Tests
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.1.1'
+
+    // RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation "io.reactivex.rxjava3:rxjava:${rxjava3Version}"
+    implementation "io.reactivex.rxjava3:rxandroid:${rxjava3AndroidVersion}"
+
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0-native-mt'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0-native-mt'
+    //
+    implementation "androidx.room:room-runtime:2.4.2"
+    implementation 'androidx.room:room-ktx:2.4.2'
+    kapt "androidx.room:room-compiler:2.4.2"
+    implementation "androidx.room:room-rxjava3:2.4.2"
+    //
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // define a BOM and its version
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.3"))
+
+    // define any required OkHttp artifacts without version
+    implementation 'com.squareup.okhttp3:okhttp'
+    implementation 'com.squareup.okhttp3:logging-interceptor'
+
+    //
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+
+}
